@@ -1,0 +1,84 @@
+
+      body { 
+
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+ .vertical-nav {
+  min-width: 10rem;
+ 
+  height: 800px;
+  position: fixed;
+  top: 0;
+  left: 0;
+ 
+  transition: all 0.4s;
+}
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+} 
+
+#sidebar.active {
+  margin-left: -20rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+
+
+.nav-link{
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    background:#686de0;
+}
+
+@media (max-width: 768px) {
+ 
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+  
+}
+
+.btn {  
+  background-color:blueviolet;  
+  color: white;  
+  text-decoration: none;  
+  padding: 8px 10px;  
+  position: relative;  
+  display: inline-block;  
+  border-radius: 2px;  
+}  
+.btn:hover {  
+   background: blue;  
+}    
+.btn .badge {  
+   position: absolute;  
+  top: -10px;  
+  right: -10px;  
+  padding: 2px 5px;  
+  border-radius: 50%;  
+  background-color: red;  
+  color: white;  
+}  
+  
+      
